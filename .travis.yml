@@ -8,6 +8,7 @@ node_js:
 
 before_script:
 - "mysql -e 'create database node_mysql;'"
+- mysql -ushippable -e "show variables like '%version';"
 
 
 script:
